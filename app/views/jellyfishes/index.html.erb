@@ -1,1 +1,24 @@
-<h1> Jellyfish </h1>
+<h1> <center> Listing Jellyfish at the Aquarium </center> </h1>
+
+<center>
+	<table>
+		<tr>
+			<th> ID 		</th>
+			<th> NAME 		</th>
+			<th> AGE 		</th>
+			<th> KIND 		</th>
+			<th> DEADLY? 	</th>
+		</tr>
+		<% @jellyfishes.each do |jf|  %>
+		<tr>
+			<td> <%= jf.id %>  			</td>
+			<td> <%= jf.name %> 		</td>
+			<td> <%= jf.age %> 			</td>
+			<td> <%= jf.kind %>  		</td>
+			<td> <%= jf.poisonous %>	</td>
+			<td> Edit	</td>
+			<td> Remove </td>
+		<% end %>
+	</table>
+</center>
+<%= render "jellyfishes/forms" %>

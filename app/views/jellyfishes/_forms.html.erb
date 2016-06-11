@@ -1,0 +1,21 @@
+<h2> Form to create a new jellyfish </h2>
+
+<%= form_for(@jellyfish) do |f| %>
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div>
+		<%= f.label :age %>
+		<%= f.number_field :age %>
+	</div>
+	<div>
+		<%= f.label :kind %>
+		<%= f.text_field :kind %>
+	</div>
+	<div>
+		<%= f.label :poisonous %>
+		<%= f.check_box :poisonous %>
+	</div>
+	<%= f.submit "Create" %>
+<% end %>

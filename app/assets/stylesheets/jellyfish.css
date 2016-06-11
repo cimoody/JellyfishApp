@@ -1,0 +1,15 @@
+th {
+    text-align: left;
+    padding: 15px;
+}
+
+td {
+	color: black;
+    height: 30px;
+    vertical-align: bottom;
+    padding: 15px;
+}
+
+tr {
+    font-family: "Arial", Arial, sans-serif;
+}
